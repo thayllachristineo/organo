@@ -1,9 +1,9 @@
-import "./Dropdown.css";
+import './Dropdown.css';
 
-const Dropdown = ({ label, options }) => (
+const Dropdown = ({ label, options, value, onChange }) => (
   <div>
     <label>{label}</label>
-    <select>
+    <select value={value} onChange={onChange}>
       {options.map((opt, index) => (
         <option key={index}>{opt}</option>
       ))}
