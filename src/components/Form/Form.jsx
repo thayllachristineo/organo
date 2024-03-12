@@ -6,7 +6,7 @@ import Input from '../Input';
 import Dropdown from '../Dropdown';
 import Button from '../Button';
 
-const Form = ({ registerCollab }) => {
+const Form = ({ registerCollab, teams }) => {
   const [name, setName] = useState('');
   const [role, setRole] = useState('');
   const [image, setImage] = useState('');
@@ -28,24 +28,17 @@ const Form = ({ registerCollab }) => {
     setTeam(ev.target.value);
   };
 
-  const times = [
-    ' ',
-    'Programação',
-    'Front-End',
-    'Data Science',
-    'DevOps',
-    'UX e Design',
-    'Mobile',
-    'Inovação e Gestão',
-  ];
-
   const onSubmit = (ev) => {
     ev.preventDefault();
     registerCollab({ name, role, image, team });
+    setName('');
+    setRole('');
+    setImage('');
+    setTeam('');
   };
 
   return (
-    <section>
+    <section className="form">
       <form onSubmit={onSubmit}>
         <h2>Preencha os dados para criar o card do colaborador</h2>
         <Input
@@ -68,7 +61,7 @@ const Form = ({ registerCollab }) => {
         />
         <Dropdown
           label="Time"
-          options={times}
+          options={teams}
           value={team}
           onChange={(e) => handleOnChangeTeam(e)}
         />

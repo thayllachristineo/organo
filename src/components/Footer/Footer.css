@@ -1,0 +1,24 @@
+footer {
+  align-items: center;
+  background-color: #6278f7;
+  background-image: url('../../assets/fundo.png');
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 80px;
+}
+
+.footer__social img {
+  height: 14px;
+  padding: 0 12px;
+}
+
+.footer__logo img {
+  height: 48px;
+}
+
+.footer__developmentBy p {
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+}

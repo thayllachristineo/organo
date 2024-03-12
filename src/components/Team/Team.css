@@ -1,0 +1,19 @@
+.team {
+  padding: 32px;
+  text-align: center;
+}
+
+.team h3 {
+  color: #212121;
+  display: inline-block;
+  font-family: 'Prata', sans-serif;
+  font-size: 32px;
+  padding-bottom: 8px;
+}
+
+.team__collab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 32px;
+}
