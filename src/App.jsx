@@ -49,7 +49,7 @@ const App = () => {
       secondaryColor: '#FFEEDF',
     },
   ];
-  console.log(collabs, teams);
+  
   return (
     <>
       <Banner />
@@ -68,7 +68,7 @@ const App = () => {
           />
         ))
       ) : (
-        <div style={{paddingBottom: '64px', textAlign: 'center'}}>
+        <div style={{ paddingBottom: '64px', textAlign: 'center' }}>
           <h3>Não há colaborador cadastrado!</h3>
         </div>
       )}

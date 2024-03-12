@@ -8,7 +8,13 @@ const Team = ({ name, primaryColor, secondaryColor, collabs }) =>
 
       <div className="team__collab">
         {collabs.map(({ image, name, role }) => (
-          <Card key={name} image={image} name={name} role={role} />
+          <Card
+            key={name}
+            image={image}
+            name={name}
+            role={role}
+            bgColor={primaryColor}
+          />
         ))}
       </div>
     </section>
